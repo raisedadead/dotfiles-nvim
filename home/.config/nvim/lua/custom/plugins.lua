@@ -19,7 +19,6 @@ local plugins = {
         "typescript",
         "tsx",
         "json",
-        
 
         -- infrastructre as code
         "yaml",

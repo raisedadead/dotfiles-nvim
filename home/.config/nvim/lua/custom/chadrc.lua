@@ -5,10 +5,13 @@ local M = {}
 -- local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "onedark",
+  theme = "catppuccin",
 }
 
 M.plugins = "custom.plugins"
+
+-- Neovim Overrides
+vim.wo.relativenumber = true
 
 -- check core.mappings for table structure
 -- M.mappings = require "custom.mappings"
