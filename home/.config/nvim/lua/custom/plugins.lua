@@ -3,7 +3,7 @@
 ---@type NvPluginSpec[]
 local plugins = {
 
-  -- Override plugin definition options
+  -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -29,6 +29,28 @@ local plugins = {
         "ini",
       },
     },
+  },
+
+  -- Wakatime
+  {
+    "wakatime/vim-wakatime",
+    config = function()
+      vim.g.wakatime_project = "dotfiles"
+    end,
+  },
+
+  -- Telescope
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = function()
+      local conf = require "plugins.configs.telescope"
+      conf.defaults.mappings.i = {
+        ["<C-j>"] = require("telescope.actions").move_selection_next,
+        ["<Esc>"] = require("telescope.actions").close,
+      }
+
+      return conf
+    end,
   },
 }
 
