@@ -34,9 +34,7 @@ local plugins = {
   -- Wakatime
   {
     "wakatime/vim-wakatime",
-    config = function()
-      vim.g.wakatime_project = "dotfiles"
-    end,
+    lazy = false
   },
 
   -- Telescope
