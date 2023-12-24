@@ -37,6 +37,13 @@ local plugins = {
     lazy = false
   },
 
+  -- Copilot
+  {
+    "github/copilot.vim",
+    lazy = false,
+    enabled = true
+  },
+
   -- Telescope
   {
     "nvim-telescope/telescope.nvim",
