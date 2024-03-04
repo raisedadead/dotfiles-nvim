@@ -21,12 +21,13 @@ local plugins = {
         "json",
 
         -- infrastructre as code
-        "yaml",
-        "hcl",
         "dockerfile",
-        "jsonc",
-        "toml",
+        "hcl",
         "ini",
+        "jsonc",
+        "terraform",
+        "toml",
+        "yaml",
       },
     },
   },
