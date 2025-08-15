@@ -1,4 +1,4 @@
--- ~/.config/nvim/lua/plugins/lint.lua
+-- lua/plugins/nvim-lint.lua
 return {
   {
     "mfussenegger/nvim-lint",
