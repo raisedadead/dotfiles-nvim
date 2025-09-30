@@ -2,8 +2,8 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
-    open_files_do_not_replace_types = { "terminal", "trouble", "qf" },
-    auto_clean_after_session_restore = true,
+    -- open_files_do_not_replace_types = { "terminal", "trouble", "qf" },
+    -- auto_clean_after_session_restore = true,
     close_if_last_window = true,
     filesystem = {
       hijack_netrw_behavior = "disabled",
